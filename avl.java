@@ -86,6 +86,13 @@ class Avl {
         }
         return n;
     }
+
+    public boolean search(Node n, int key) {
+        if(n == null) return false;
+        else if(n.data == key) return true;
+        else if(key < n.data) return search(n.left, key);
+        return search(n.right, key);
+    }
     
     public void traversalInOrder(Node n) {
         if(n == null) return;
