@@ -96,7 +96,7 @@ class Avl {
     }
 }
 
-public class Main {
+public class avl {
     public static void main(String[] args) {
         Avl a = new Avl();
         for(int i = 0; i < 10; i++) {
